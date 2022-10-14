@@ -147,6 +147,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
+            btn.append([InlineKeyboardButton(text="🔍ɢᴏᴏɢʟᴇ🔎", url='https://www.google.com/')])
             btn = [[
           InlineKeyboardButton('🔍ɢᴏᴏɢʟᴇ🔎', url='https://www.google.com/')
           ]]
