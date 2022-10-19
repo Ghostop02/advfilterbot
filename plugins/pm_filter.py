@@ -151,7 +151,7 @@ async def advantage_spoll_choker(bot, query):
           InlineKeyboardButton('🔍ɢᴏᴏɢʟᴇ🔎', url='https://www.google.com/')
           ]]
             reply_markup = InlineKeyboardMarkup(btn)
-            k = await query.message.edit('𝖬𝗈𝗏𝗂𝖾 𝗈𝗋 𝖲𝖾𝗋𝗂𝖾𝗌 𝖭𝗈𝗍 𝖺𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖱𝖾𝖺𝗌𝗈𝗇.....\n\n1)O.T.T Or DVD Not Released\n\n2)𝖳𝗒𝗉𝖾 𝖭𝖺𝗆𝖾 𝖶𝗂𝗍𝗁 𝖸𝖾𝖺𝗋\n\n3)𝖬𝗈𝗏𝗂𝖾 𝖨𝗌 𝖭𝗈𝗍 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝗂𝗇 𝗍𝗁𝖾 𝖽𝖺𝗍𝖺𝖻𝖺𝗌𝖾 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖠𝖽𝗆𝗂𝗇𝗌')
+            k = await query.message.edit('<b>𝖬𝗈𝗏𝗂𝖾 𝗈𝗋 𝖲𝖾𝗋𝗂𝖾𝗌 𝖭𝗈𝗍 𝖺𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖱𝖾𝖺𝗌𝗈𝗇.....\n\n1)O.T.T Or DVD Not Released\n\n2)𝖳𝗒𝗉𝖾 𝖭𝖺𝗆𝖾 𝖶𝗂𝗍𝗁 𝖸𝖾𝖺𝗋\n\n3)𝖬𝗈𝗏𝗂𝖾 𝖨𝗌 𝖭𝗈𝗍 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝗂𝗇 𝗍𝗁𝖾 𝖽𝖺𝗍𝖺𝖻𝖺𝗌𝖾 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖠𝖽𝗆𝗂𝗇𝗌</b>')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -673,7 +673,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂{get_size(file.file_size)}🎥{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"📂{get_size(file.file_size)} 🎥{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -752,7 +752,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"😻 𝖧𝖾𝗅𝗅𝗈 {message.from_user.mention}\n🔰 𝖸𝗈𝗎𝗋 𝖥𝗂𝗅𝖾𝗌 𝖠𝗋𝖾 𝖱𝖾𝖺𝖽𝗒\n\n♨️ 𝐁𝐫𝐨𝐮𝐠𝐡𝐭 𝐓𝐨 𝐘𝐨𝐮 𝐁𝐲:- <a href=https://t.me/isaimini_updates>❤️ 𝗜𝘀𝗮𝗶𝗺𝗶𝗻𝗶 𝗣𝗿𝗶𝗺𝗲 ❤️</a>"
+        cap = f"<b>😻 𝖧𝖾𝗅𝗅𝗈 {message.from_user.mention}\n🔰 𝖸𝗈𝗎𝗋 𝖥𝗂𝗅𝖾𝗌 𝖠𝗋𝖾 𝖱𝖾𝖺𝖽𝗒\n\n</b>♨️ 𝐁𝐫𝐨𝐮𝐠𝐡𝐭 𝐓𝐨 𝐘𝐨𝐮 𝐁𝐲:- <a href=https://t.me/isaimini_updates>❤️ 𝗜𝘀𝗮𝗶𝗺𝗶𝗻𝗶 𝗣𝗿𝗶𝗺𝗲 ❤️</a>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
