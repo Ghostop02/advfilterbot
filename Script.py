@@ -109,7 +109,7 @@ This module only works for my admins 🤯
 Since This Bot Hosting Web are Changed to Paid Plans We need Funds to Continue This Service.
 If You Like Our Services You Can Donate And Support Us Through UPI ID 👇
 
-🔗 <code>rohithsk02@oksbi</code>
+🔗 <code>isaiminiprime.famc@idfcbank</code>
 
 Thanks For Your Support ❤️"""
 
