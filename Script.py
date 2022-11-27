@@ -106,7 +106,7 @@ This module only works for my admins 🤯
 <b>᚛›✮ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝙱</b>"""
 
     DONATE_TEXT = """<b>NOTE:</b>
-Since Bot Hosting Web are Changed to paid Plans We need Funds to continue This Service
+Since This Bot Hosting Web are Changed to Paid Plans We need Funds to Continue This Service.
 If You Like Our Services You Can Donate And Support Us Through UPI ID 👇
 
 🔗 <code>rohithsk02@oksbi</code>
