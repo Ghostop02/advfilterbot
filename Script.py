@@ -104,6 +104,16 @@ This module only works for my admins 🤯
 <b>᚛›✮ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code></b>
 <b>᚛›✮ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝙱</b>
 <b>᚛›✮ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝙱</b>"""
+
+    DONATE_TEXT = """<b>NOTE:</b>
+Since Bot Hosting Web are Changed to paid Plans We need Funds to continue This Service
+If You Like Our You Can Donate And Support Us Through UPI ID 👇
+
+🔗 rohithsk02@oksbi
+
+Thanks For Your Support ❤️"""
+
+
     LOG_TEXT_G = """#𝐍𝐞𝐰𝐆𝐫𝐨𝐮𝐩
     
 <b>᚛› 𝐆𝐫𝐨𝐮𝐩 ⪼  {}(<code>{}</code>)</b>
