@@ -435,7 +435,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('✅ SΞARCH HΞRΞ ✅', switch_inline_query_current_chat='')
+            InlineKeyboardButton('✅ 𝗗𝗼𝗻𝗮𝘁𝗲 𝗨𝘀 ✅', callback_data='donate')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -461,6 +461,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
+    elif query.data == "donate":
+        buttons = [[
+            InlineKeyboardButton('🚶 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗔𝗱𝗺𝗶𝗻 🚶', url='https://t.me/Subadmin_bot')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.DONATE_TEXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('⭕️ Group ⭕️', url='https://t.me/+2YaY1CQKOfg3MzQ9'),
