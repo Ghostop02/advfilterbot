@@ -107,7 +107,7 @@ This module only works for my admins 🤯
 
     DONATE_TEXT = """<b>NOTE:</b>
 Since Bot Hosting Web are Changed to paid Plans We need Funds to continue This Service
-If You Like Our You Can Donate And Support Us Through UPI ID 👇
+If You Like Our Services You Can Donate And Support Us Through UPI ID 👇
 
 🔗 rohithsk02@oksbi
 
