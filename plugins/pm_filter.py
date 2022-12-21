@@ -797,7 +797,9 @@ async def auto_filter(client, msg, spoll=False):
             await dog.delete()
         except Exception as e:
             logger.exception(e)
-            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            panda = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(500)
+            await panda.delete()
     else:
         duck = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(500)
