@@ -787,7 +787,7 @@ async def auto_filter(client, msg, spoll=False):
         try:
             tiger = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(8)
+            await asyncio.sleep(300)
             await tiger.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
@@ -798,11 +798,11 @@ async def auto_filter(client, msg, spoll=False):
         except Exception as e:
             logger.exception(e)
             panda = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(500)
-            await panda.delete()
+            await asyncio.sleep(300)
+            await panda.delete(10)
     else:
         duck = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(500)
+        await asyncio.sleep(300)
         await duck.delete()
     if spoll:
         await msg.message.delete()
@@ -847,7 +847,7 @@ async def advantage_spell_chok(msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         k = await msg.reply("𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍. 𝗖𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴")
-        await asyncio.sleep(8)
+        await asyncio.sleep(15)
         await k.delete()
         return
     SPELL_CHECK[msg.id] = movielist
@@ -860,7 +860,7 @@ async def advantage_spell_chok(msg):
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     lion = await msg.reply("𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍\n𝖣𝗂𝖽 𝗒𝗈𝗎 𝗆𝖾𝖺𝗇 𝖺𝗇𝗒 𝗈𝗇𝖾 𝗈𝖿 𝗍𝗁𝖾𝗌𝖾?",
                     reply_markup=InlineKeyboardMarkup(btn))
-    await asyncio.sleep(8)
+    await asyncio.sleep(30)
     await lion.delete()
 
 
